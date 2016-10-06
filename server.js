@@ -5,11 +5,8 @@ app.get('/', function(request, response){
     response.send('Hello MGT-656!');
 });
 
-app.get('/clever-newt', function(request, response){
-    response.send('The fool didn\'t know it was impossible, so he did it');
+app.get('/nickname', function(request, response){
+    response.send('clever-newt');
 });
 
-app.listen(
-    process.env.PORT || 4000,
-    process.env.IP || 'localhost'
-    );
+app.listen(process.env.PORT || 4000);
